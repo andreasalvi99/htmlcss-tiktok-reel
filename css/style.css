@@ -302,3 +302,15 @@ li:nth-child(4) {
 li:not(:first-child) {
 	opacity: 0.6;
 }
+
+.control-bar {
+	position: relative;
+}
+
+.control-bar::after {
+	content: "_";
+	position: absolute;
+	top: -31px;
+    right: 8px;
+    font-size: 50px;
+}
