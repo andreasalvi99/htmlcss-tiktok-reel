@@ -188,7 +188,8 @@ a {
 }
 
 .plus-sign {
-	padding-bottom: 3px;
+	line-height: 20px;
+	font-size: 20px;
 }
 
 .bi.bi-heart-fill {
