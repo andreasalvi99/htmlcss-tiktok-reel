@@ -1,154 +1,137 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bool Tok</title>
+    <link rel="icon" href="assets/img/booltok_logo.png" />
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Bool Tok</title>
-  <link rel="icon" href="assets/img/booltok_logo.png">
+    <!-- Bootstrap Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
 
+    <!-- TikTok Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=TikTok+Sans:opsz,wght@12..36,300..900&display=swap"
+      rel="stylesheet"
+    />
 
-  <!-- Bootstrap Icons -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
 
+  <body>
+    <!-- Container della pagina, necessario per via del layout particolare -->
+    <div class="reel-page debug">
+      <video src="assets/video/coder.mp4" autoplay muted loop></video>
 
-  <!-- TikTok Sans -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=TikTok+Sans:opsz,wght@12..36,300..900&display=swap"
-    rel="stylesheet">
-
-  <!-- Stylesheet -->
-  <link rel="stylesheet" href="css/style.css">
-
-</head>
-
-<body>
-  <!-- Container della pagina, necessario per via del layout particolare -->
-  <div class="reel-page debug">
-    <video src="assets/video/coder.mp4" autoplay muted loop></video>
-
-    <!-- Header -->
-    <header class="reel-header">
-      
-      <nav class="nav-header">
-        <i class="bi bi-play-btn"></i>
-      </nav>
-      
-      <nav class="nav-header">
-        
-        <nav class="nav-inside">
-          <a href="">Esplora</a>
+      <!-- Header -->
+      <header class="reel-header">
+        <nav class="nav-header">
+          <i class="bi bi-play-btn"></i>
         </nav>
-        <nav class="nav-inside">
-          <div class="red-dot">
+
+        <nav class="nav-header">
+          <nav class="nav-inside">
+            <a href="">Esplora</a>
+          </nav>
+          <nav class="nav-inside">
+            <div class="red-dot"></div>
+            <a href="">Seguiti</a>
+          </nav>
+          <nav class="nav-inside">
+            <a class="control-bar" href="">Per te</a>
+          </nav>
+        </nav>
+
+        <nav class="nav-header debug">
+          <i class="bi bi-search"></i>
+        </nav>
+      </header>
+
+      <!-- Sidebar -->
+      <div class="sidebar">
+        <div>
+          <div class="banner">
+            <span class="plus-sign"> + </span>
           </div>
-          <a href="">Seguiti</a>
-        </nav>
-        <nav class="nav-inside">
-          <a class="control-bar" href="">Per te</a>
-        </nav>
-
-      </nav>
-      
-      <nav class="nav-header debug">
-        <i class="bi bi-search"></i>
-      </nav>
-
-    </header>
-
-    <!-- Sidebar -->
-    <div class="sidebar">
-      
-      <div>
-        <div class="banner">
-          <span class="plus-sign">
-            +
-          </span>
+          <img
+            src="./assets/img/boolean_logo.png"
+            alt="profile-logo"
+            class="profile-logo"
+          />
         </div>
-        <img src="./assets/img/boolean_logo.png" alt="profile-logo" class="profile-logo">
-      </div>
 
-      <div class="sidebar-item">
-        <i class="bi bi-heart-fill"></i>
-        <div class="item-value-likes">
-          588
+        <div class="sidebar-item">
+          <i class="bi bi-heart-fill"></i>
+          <div class="item-value-likes">588</div>
+        </div>
+
+        <div class="sidebar-item">
+          <i class="bi bi-chat-dots-fill"></i>
+          <div class="item-value-comm">13</div>
+        </div>
+
+        <div class="sidebar-item">
+          <i class="bi bi-bookmark-fill"></i>
+          <div class="item-value-bookm">638</div>
+        </div>
+
+        <div class="sidebar-item">
+          <i class="bi bi-arrow-up-right-square-fill"></i>
+          <div class="item-value-share">491</div>
         </div>
       </div>
 
-      <div class="sidebar-item">
-        <i class="bi bi-chat-dots-fill"></i>
-        <div class="item-value-comm">
-          13
-        </div>
-      </div>
-
-      <div class="sidebar-item">
-        <i class="bi bi-bookmark-fill"></i>
-        <div class="item-value-bookm">
-          638
-        </div>
-      </div>
-
-      <div class="sidebar-item">
-        <i class="bi bi-arrow-up-right-square-fill"></i>
-        <div class="item-value-share">
-          491
-        </div>
-      </div>
-
+      <!-- Footer -->
+      <footer>
+        <h4>boolean.careers</h4>
+        <p>
+          Prova il Foundamentals Camp. 20 ore di corso <br />
+          gratuito per...
+          <span>Vedi altro</span>
+        </p>
+      </footer>
     </div>
 
-    <!-- Footer -->
-    <footer>
-      <h4>boolean.careers</h4>
-      <p>Prova il Foundamentals Camp. 20 ore di corso <br> 
-        gratuito per... 
-        <span>Vedi altro</span>
-      </p>
-    </footer>
-  </div>
-
-  <section>
-    <ul>
-      <li> 
-        <nav>
-          <i class="bi bi-house-fill"></i>
-        </nav>
-        Home
-      </li>
-        
-      <li>
-        <nav>
-          <i class="bi bi-people"></i>
-        </nav>
-        Amici
-      </li>
-
-      <li>
-        <nav class="add-box">
-          +
-        </nav>
+    <section>
+      <ul>
+        <li>
+          <nav>
+            <i class="bi bi-house-fill"></i>
+          </nav>
+          Home
         </li>
 
-      <li>
-        <nav>
-          <div class="push">
-            19
-          </div>
-          <i class="bi bi-chat-left"></i>
-        </nav>
-        Posta in arrivo
-      </li>
-      <li>
-        <nav>
-          <i class="bi bi-person"></i>
-        </nav>
-        Profilo
-      </li>
-    </ul>
-  </section>
+        <li>
+          <nav>
+            <i class="bi bi-people"></i>
+          </nav>
+          Amici
+        </li>
 
-</body>
+        <li>
+          <nav class="add-box">+</nav>
+        </li>
 
+        <li>
+          <nav>
+            <div class="push">19</div>
+            <i class="bi bi-chat-left"></i>
+          </nav>
+          Posta in arrivo
+        </li>
+        <li>
+          <nav>
+            <i class="bi bi-person"></i>
+          </nav>
+          Profilo
+        </li>
+      </ul>
+    </section>
+  </body>
 </html>
