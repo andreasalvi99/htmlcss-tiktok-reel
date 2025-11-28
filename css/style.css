@@ -344,3 +344,10 @@ p > span:hover {
 section * :hover {
 	cursor: pointer;
 }
+
+section {
+	display: flex;
+	justify-content: space-around;
+	max-width: 512px;
+	flex-direction: column;
+}
